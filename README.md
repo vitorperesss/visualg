@@ -16,7 +16,7 @@ Pessoas que querem reforçar seus conhecimentos antes de aprender uma linguagem 
 🚀 Como utilizar?
 Baixe ou clone o repositório:
 
-git clone https://github.com/seu-usuario/nome-do-repositorio.git  
+git clone https://github.com/vitorperesss/visualg.git
 
 Abra os arquivos no VisuAlg
 
