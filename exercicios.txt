@@ -1,0 +1,119 @@
+// Lista de Exercícios Resolvidos no VisuAlg
+
+// 1. Verificar se um número é par ou ímpar
+algoritmo "Par ou Ímpar"
+var
+    num: inteiro
+inicio
+    escreva("Digite um número: ")
+    leia(num)
+    
+    se num % 2 = 0 entao
+        escreva("O número ", num, " é par.")
+    senao
+        escreva("O número ", num, " é ímpar.")
+    fimse
+fimalgoritmo
+
+// 2. Calcular o IMC
+algoritmo "Cálculo do IMC"
+var
+    peso, altura, imc: real
+inicio
+    escreva("Digite seu peso (kg): ")
+    leia(peso)
+    escreva("Digite sua altura (m): ")
+    leia(altura)
+    
+    imc <- peso / (altura * altura)
+    escreva("Seu IMC é: ", imc)
+    
+    se imc < 18.5 entao
+        escreva(" - Abaixo do peso")
+    senao se imc < 24.9 entao
+        escreva(" - Peso normal")
+    senao se imc < 29.9 entao
+        escreva(" - Sobrepeso")
+    senao
+        escreva(" - Obesidade")
+    fimse
+fimalgoritmo
+
+// 3. Verificar se um número é primo
+algoritmo "Número Primo"
+var
+    num, i, contador: inteiro
+inicio
+    escreva("Digite um número: ")
+    leia(num)
+    contador <- 0
+    
+    para i de 1 ate num faca
+        se num % i = 0 entao
+            contador <- contador + 1
+        fimse
+    fimpara
+    
+    se contador = 2 entao
+        escreva("O número ", num, " é primo.")
+    senao
+        escreva("O número ", num, " não é primo.")
+    fimse
+fimalgoritmo
+
+// 4. Tabuada de um número
+algoritmo "Tabuada"
+var
+    num, i: inteiro
+inicio
+    escreva("Digite um número: ")
+    leia(num)
+    
+    para i de 1 ate 10 faca
+        escreva(num, " x ", i, " = ", num * i)
+    fimpara
+fimalgoritmo
+
+// 5. Sequência de Fibonacci até N termos
+algoritmo "Fibonacci"
+var
+    n, a, b, temp, i: inteiro
+inicio
+    escreva("Digite o número de termos: ")
+    leia(n)
+    
+    a <- 0
+    b <- 1
+    
+    escreva("Sequência de Fibonacci: ")
+    escreva(a, " ", b, " ")
+    
+    para i de 3 ate n faca
+        temp <- a + b
+        escreva(temp, " ")
+        a <- b
+        b <- temp
+    fimpara
+fimalgoritmo
+
+// 🔥 DESAFIOS ADICIONAIS 🔥
+
+// 6. Calcular o fatorial de um número
+// Entrada: 5
+// Saída esperada: 5! = 120
+
+// 7. Verificar se uma palavra é um palíndromo
+// Entrada: "radar"
+// Saída esperada: "É um palíndromo"
+
+// 8. Calcular a média de N números inseridos pelo usuário
+// Entrada: 5 números
+// Saída esperada: Média dos valores informados
+
+// 9. Criar um simulador de caixa eletrônico
+// Entrada: Valor a ser sacado
+// Saída esperada: Quantidade de notas de 100, 50, 20, 10, 5 e 2 necessárias
+
+// 10. Criar um jogo de adivinhação
+// O programa deve gerar um número aleatório e o usuário tem que adivinhar
+// Dica: Utilize um loop até o usuário acertar o número
